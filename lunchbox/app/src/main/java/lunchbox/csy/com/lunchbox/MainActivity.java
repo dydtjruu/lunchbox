@@ -2,6 +2,7 @@ package lunchbox.csy.com.lunchbox;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -13,6 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button button = findViewById(R.id.button);
+        Button button1 = findViewById(R.id.button2);
+        
+
         Toast.makeText(this,"garam push test",Toast.LENGTH_LONG).show();
     }
+
+
 }

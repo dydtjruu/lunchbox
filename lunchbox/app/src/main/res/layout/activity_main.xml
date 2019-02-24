@@ -9,7 +9,15 @@
     <Button
         android:id="@+id/button"
         android:text="버튼"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:text="지연버튼"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/button"/>
 
     </android.support.constraint.ConstraintLayout>
