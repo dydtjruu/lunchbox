@@ -5,4 +5,9 @@
     <string name="setting">setting</string>
     <string name="alarm">alarm</string>
     <string name="profile">profile</string>
+
+    <!--<가람작성>-->
+    <string name="txt_title">런치박스</string>
+    <!--</가람작성>-->
+
 </resources>
