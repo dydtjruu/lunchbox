@@ -21,4 +21,9 @@
     <string name="setting_sub_category3">위치기반 서비스 이용약관</string>
     <!--</로이작성>-->
 
+    <!--<지연작성>-->
+    <string name="searchBtn">지연버튼</string>
+    <!--</지연작성>-->
+
+
 </resources>
