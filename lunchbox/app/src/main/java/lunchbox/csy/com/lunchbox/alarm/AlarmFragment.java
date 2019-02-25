@@ -1,4 +1,4 @@
-package lunchbox.csy.com.lunchbox.alaram;
+package lunchbox.csy.com.lunchbox.alarm;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
