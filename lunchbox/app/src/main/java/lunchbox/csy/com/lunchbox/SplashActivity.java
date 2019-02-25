@@ -9,15 +9,16 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 
-public class SplashActivity extends Activity {
+import lunchbox.csy.com.lunchbox.base.AbstBaseActivity;
+
+public class SplashActivity extends AbstBaseActivity {
     /** Duration of wait **/
     private final int SPLASH_DISPLAY_LENGTH = 1000000;
     LinearLayout splash;
     String doCheck;
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    protected void onCreateChild() {
         setContentView(R.layout.activity_splash);
 
         LinearLayout nextClick = (LinearLayout) findViewById(R.id.nextClick);
@@ -49,5 +50,15 @@ public class SplashActivity extends Activity {
 //                SplashActivity.this.startActivity(mainIntent);
 //                SplashActivity.this.finish();
 //            }, SPLASH_DISPLAY_LENGTH);
-        }
+    }
+
+    @Override
+    protected void onDestoryChild() {
+
+    }
+
+    @Override
+    public void onClickListener(View v) {
+
+    }
 }

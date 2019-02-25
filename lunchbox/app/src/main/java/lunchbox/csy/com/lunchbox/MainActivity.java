@@ -12,28 +12,28 @@ import android.support.v4.widget.ImageViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import lunchbox.csy.com.lunchbox.alaram.AlarmFragment;
+import lunchbox.csy.com.lunchbox.base.AbstBaseActivity;
 import lunchbox.csy.com.lunchbox.home.HomeFragment;
 import lunchbox.csy.com.lunchbox.lib.UIlib;
 import lunchbox.csy.com.lunchbox.profile.ProfileFragment;
 import lunchbox.csy.com.lunchbox.search.SearchFragment;
 import lunchbox.csy.com.lunchbox.setting.SettingFragment;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AbstBaseActivity {
     private static String TAG = MainActivity.class.getSimpleName();
 
     private TextView mTextMessage;
     private BottomNavigationViewEx bottomNavigationViewEx;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
+    protected void onCreateChild() {
         UIlib.getInstance(this).setHideNavigation(true);
         UIlib.getInstance(this).setStatusBarColor(getResources().getColor(R.color.grey));
 
@@ -55,6 +55,21 @@ public class MainActivity extends AppCompatActivity {
         changeItemColor(0);
     }
 
+    @Override
+    protected void onDestoryChild() {
+
+    }
+
+    //xml에 onClick 적용 후 이 곳에서 case문으로 추가하여 버튼 누르면 -하게 기능구현하기
+    @Override
+    public void onClickListener(View v) {
+        switch (v.getId()) {
+//            case R.id.button1:
+//                break;
+//                default:
+//                    break;
+        }
+    }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
