@@ -2,14 +2,12 @@ package lunchbox.csy.com.lunchbox;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.ImageViewCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,7 +16,7 @@ import android.widget.Toast;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
-import lunchbox.csy.com.lunchbox.alaram.AlarmFragment;
+import lunchbox.csy.com.lunchbox.alarm.AlarmFragment;
 import lunchbox.csy.com.lunchbox.base.AbstBaseActivity;
 import lunchbox.csy.com.lunchbox.home.HomeFragment;
 import lunchbox.csy.com.lunchbox.lib.UIlib;
