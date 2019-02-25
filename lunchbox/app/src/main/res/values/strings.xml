@@ -24,6 +24,7 @@
     <!--<지연작성>-->
     <string name="searchBtn">지연버튼</string>
     <string name="searchEdit">검색창</string>
+    <string name="menu_picker_start">런치메뉴랜덤박스실행</string>
     <!--</지연작성>-->
 
 
